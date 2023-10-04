@@ -1,0 +1,111 @@
+# devices: 1
+
+Device is a NVIDIA GeForce GTX 1650, capability: 7.5
+Clock speed: 1560.000000 MHz
+# cores: 16
+
+Global memory: 3.999756GB
+Memory Clock Rate (MHz): 4001.000000
+Memory Bus Width (bits): 128
+Peak Memory Bandwidth (GB/s): 128.032000
+L2 Cache size: (KB): 1024.000000
+ECC NOT Enabled
+Device can concurrently copy memory between host and device in both directions
+     and execute a kernel at the same time
+Device shares a unified address space with the host
+CUDA Driver version: 11080, runtime version: 10010
+
+ capability 7.5
+m: 2, k: 8, n: 2, tx: 16, ty: 16, gridX: 1, gridY: 1, reps: 100, epsilon: 7.15256e-07
+
+Using Single precision arithmetic
+
+
+
+A:
+       1 0 0 0 0 0 0 0 
+0 1 0 0 0 0 0 0 
+
+B:
+      17 18 
+19 20 
+21 22 
+23 24 
+25 26 
+27 28 
+29 30 
+31 32 
+Device computation time: 0.001190 sec. [0.001344 gflops]
+
+     N     TX     TY   Reps       t_h     GF_h       t_d   GF_d   Host?  L1? Rnd?  BT?  SHM
+@     2     8      8    100   0.00e+00     0.0  1.19e-03    0.0     N    N    N    N    4
+
+
+C (device):
+      17 18 
+19 20 
+
+Device result: answers matched to within 7.153e-07
+
+# devices: 1
+
+Device is a NVIDIA GeForce GTX 1650, capability: 7.5
+Clock speed: 1560.000000 MHz
+# cores: 16
+
+Global memory: 3.999756GB
+Memory Clock Rate (MHz): 4001.000000
+Memory Bus Width (bits): 128
+Peak Memory Bandwidth (GB/s): 128.032000
+L2 Cache size: (KB): 1024.000000
+ECC NOT Enabled
+Device can concurrently copy memory between host and device in both directions
+     and execute a kernel at the same time
+Device shares a unified address space with the host
+CUDA Driver version: 11080, runtime version: 10010
+
+ capability 7.5
+m: 400, k: 800, n: 800, tx: 16, ty: 16, gridX: 7, gridY: 4, reps: 100, epsilon: 0.000286102
+
+Using Single precision arithmetic
+
+
+Device computation time: 0.052176 sec. [1962.588213 gflops]
+
+     N     TX     TY   Reps       t_h     GF_h       t_d   GF_d   Host?  L1? Rnd?  BT?  SHM
+@   800     8      8    100   0.00e+00     0.0  5.22e-02 1962.6     N    N    N    N    4
+
+
+Device result: answers matched to within 0.000286102
+
+# devices: 1
+
+Device is a NVIDIA GeForce GTX 1650, capability: 7.5
+Clock speed: 1560.000000 MHz
+# cores: 16
+
+Global memory: 3.999756GB
+Memory Clock Rate (MHz): 4001.000000
+Memory Bus Width (bits): 128
+Peak Memory Bandwidth (GB/s): 128.032000
+L2 Cache size: (KB): 1024.000000
+ECC NOT Enabled
+Device can concurrently copy memory between host and device in both directions
+     and execute a kernel at the same time
+Device shares a unified address space with the host
+CUDA Driver version: 11080, runtime version: 10010
+
+ capability 7.5
+m: 400, k: 800, n: 200, tx: 16, ty: 16, gridX: 2, gridY: 4, reps: 100, epsilon: 7.15256e-05
+
+Using Single precision arithmetic
+
+
+Device computation time: 0.025178 sec. [63.547653 gflops]
+
+     N     TX     TY   Reps       t_h     GF_h       t_d   GF_d   Host?  L1? Rnd?  BT?  SHM
+@   200     8      8    100   0.00e+00     0.0  2.52e-02   63.5     N    N    N    N    4
+
+
+Device result: answers matched to within 7.15256e-05
+

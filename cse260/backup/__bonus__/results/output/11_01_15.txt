@@ -1,0 +1,53 @@
+# devices: 1
+
+Device is a NVIDIA GeForce GTX 1650, capability: 7.5
+Clock speed: 1560.000000 MHz
+# cores: 16
+
+Global memory: 3.999756GB
+Memory Clock Rate (MHz): 4001.000000
+Memory Bus Width (bits): 128
+Peak Memory Bandwidth (GB/s): 128.032000
+L2 Cache size: (KB): 1024.000000
+ECC NOT Enabled
+Device can concurrently copy memory between host and device in both directions
+     and execute a kernel at the same time
+Device shares a unified address space with the host
+CUDA Driver version: 11080, runtime version: 10010
+
+ capability 7.5
+m: 2, k: 8, n: 2, tx: 2, ty: 2, gridX: 1, gridY: 1, reps: 100, epsilon: 7.15256e-07
+
+Using Single precision arithmetic
+
+
+
+A:
+       1 0.5 0.3333 0.25 0.2 0.1667 0.1429 0.125 
+0.5 0.3333 0.25 0.2 0.1667 0.1429 0.125 0.1111 
+
+B:
+       1 0.5 
+0.5 0.3333 
+0.3333 0.25 
+0.25 0.2 
+0.2 0.1667 
+0.1667 0.1429 
+0.1429 0.125 
+0.125 0.1111 
+Device computation time: 0.001123 sec. [0.001425 gflops]
+
+     N     TX     TY   Reps       t_h     GF_h       t_d   GF_d   Host?  L1? Rnd?  BT?  SHM
+@     2     8      8    100   0.00e+00     0.0  1.12e-03    0.0     N    N    N    N    4
+
+
+C (device):
+   1.609 0.7238 
+0.5077 0.2917 
+Error report for Device result:
+C[0, 0] is 1.609, should be: 1.25
+C[0, 1] is 0.7238, should be: 0.6667
+C[1, 0] is 0.5077, should be: 0.4583
+C[1, 1] is 0.2917, should be: 0.25
+  *** A total of 4 differences, error = 0.1269
+

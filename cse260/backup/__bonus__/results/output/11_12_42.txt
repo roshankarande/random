@@ -1,0 +1,1 @@
+Usage: mm [-n <domain size>] [-r <reps>] [-x <x thread geometry> [-y <y thread geometry] [-e <epsilon>] [-h {do_host}] [-l  <prefer l1>] [-b <use bt>] [-R <use rand>]

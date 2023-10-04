@@ -1,0 +1,31 @@
+# devices: 1
+
+Device is a NVIDIA GeForce GTX 1650, capability: 7.5
+Clock speed: 1560.000000 MHz
+# cores: 16
+
+Global memory: 3.999756GB
+Memory Clock Rate (MHz): 4001.000000
+Memory Bus Width (bits): 128
+Peak Memory Bandwidth (GB/s): 128.032000
+L2 Cache size: (KB): 1024.000000
+ECC NOT Enabled
+Device can concurrently copy memory between host and device in both directions
+     and execute a kernel at the same time
+Device shares a unified address space with the host
+CUDA Driver version: 11080, runtime version: 10010
+
+ capability 7.5
+m: 1024, k: 2048, n: 2048, tx: 16, ty: 16, gridX: 16, gridY: 16, reps: 100, epsilon: 0.000732422
+
+Using Single precision arithmetic
+
+
+Device computation time: 0.869111 sec. [1976.717356 gflops]
+
+     N     TX     TY   Reps       t_h     GF_h       t_d   GF_d   Host?  L1? Rnd?  BT?  SHM
+@  2048     8      8    100   0.00e+00     0.0  8.69e-01 1976.7     N    N    N    N    4
+
+
+Device result: answers matched to within 0.000732422
+
